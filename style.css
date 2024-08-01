@@ -1,0 +1,572 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    color: white;
+    font-family: "Poppins", sans-serif;
+
+    ::-webkit-scrollbar {
+        width: 3px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background-color: var(--primary);
+    }
+}
+
+:root {
+    --primary: #e85d04;
+    --cream: #fefae0;
+    --yellow: #FFC107;
+}
+
+.container-fluid {
+    max-width: 1400px;
+}
+
+/* Navbar */
+
+.landing-page {
+    position: relative;
+    height: 600px;
+}
+
+.video-wrapper video {
+    position: absolute;
+    height: 600px;
+    object-fit: cover;
+}
+
+.landing-page #navbar {
+    width: 100%;
+    transition: background 0.3s, position 0.3s;
+    z-index: 999;
+}
+
+.landing-page nav .navbar-nav li a {
+    color: white;
+    margin: 0 1.5rem;
+    text-transform: capitalize;
+}
+
+.landing-page nav .navbar-nav li .active {
+    color: var(--primary);
+}
+
+.landing-page nav .navbar-nav li a:hover {
+    color: var(--primary);
+}
+
+.landing-page nav button {
+    font-weight: bold;
+    color: white;
+    border-radius: 2rem;
+    cursor: pointer;
+    width: 95.02px;
+    height: 42.66px;
+    border: none;
+    background-color: var(--primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: .8rem;
+}
+
+.landing-page nav button .span-mother {
+    display: flex;
+    overflow: hidden;
+}
+
+.landing-page nav button:hover .span-mother {
+    position: absolute;
+}
+
+.landing-page nav button:hover .span-mother span {
+    transform: translateY(1.2em);
+}
+
+.landing-page nav button .span-mother span:nth-child(1) {
+    transition: 0.2s;
+}
+
+.landing-page nav button .span-mother span:nth-child(2) {
+    transition: 0.3s;
+}
+
+.landing-page nav button .span-mother span:nth-child(3) {
+    transition: 0.4s;
+}
+
+.landing-page nav button .span-mother span:nth-child(4) {
+    transition: 0.5s;
+}
+
+.landing-page nav button .span-mother span:nth-child(5) {
+    transition: 0.6s;
+}
+
+.landing-page nav button .span-mother span:nth-child(6) {
+    transition: 0.7s;
+}
+
+.landing-page nav button .span-mother2 {
+    display: flex;
+    position: absolute;
+    overflow: hidden;
+}
+
+.landing-page nav button .span-mother2 span {
+    transform: translateY(-1.5em);
+}
+
+.landing-page nav button:hover .span-mother2 span {
+    transform: translateY(0);
+}
+
+.landing-page nav button .span-mother2 span {
+    transition: 0.2s;
+}
+
+.landing-page nav button .span-mother2 span:nth-child(2) {
+    transition: 0.3s;
+}
+
+.landing-page nav button .span-mother2 span:nth-child(3) {
+    transition: 0.4s;
+}
+
+.landing-page nav button .span-mother2 span:nth-child(4) {
+    transition: 0.5s;
+}
+
+.landing-page nav button .span-mother2 span:nth-child(5) {
+    transition: 0.6s;
+}
+
+.landing-page nav button .span-mother2 span:nth-child(6) {
+    transition: 0.7s;
+}
+
+/* landing page_ content */
+
+.landing-page .content {
+    color: white;
+}
+
+.landing-page .content h1 {
+    font-weight: bolder;
+    font-size: 3.5rem;
+}
+
+.landing-page .content button {
+    background-color: var(--primary);
+    color: white;
+    transition: .3s;
+}
+
+.landing-page .content button:hover {
+    background: none;
+    border: 2px dotted white;
+    color: white;
+    letter-spacing: 2px;
+}
+
+.landing-page .detail {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.landing-page .detail .share {
+    font-weight: normal;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+.landing-page .detail .share i {
+    color: white;
+    background-color: var(--primary);
+    margin-left: 1rem;
+    border: 1px dotted transparent;
+    transition: .1s all ease-in-out;
+}
+
+.landing-page .detail .share i:hover {
+    animation: spin 1.5s infinite linear;
+    background: none;
+    color: var(--primary);
+    border: 1px dotted var(--primary);
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.landing-page .detail i {
+    color: var(--primary);
+}
+
+@media (max-width:450px) {
+    .landing-page .content h1 {
+        font-size: 2.5rem;
+    }
+
+    .landing-page,
+    .video-wrapper video {
+        height: 600px !important;
+    }
+}
+
+@media (max-width:768px) {
+
+    .landing-page,
+    .video-wrapper video {
+        height: 400px;
+    }
+
+    .landing-page .detail {
+        font-size: 1rem;
+    }
+}
+
+/* //////////ABOUT// */
+
+.about {
+    padding: 5rem 0;
+    background-image: url(assets/about-bg2.jpg);
+    background-size: cover;
+}
+
+.about .img-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.about .img-wrapper .moment {
+    position: absolute;
+    bottom: 10%;
+}
+
+.about .img-wrapper .moment i {
+    border-radius: 100%;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+}
+
+/* //artists */
+
+.artists {
+    padding: 5rem 0;
+}
+
+.artists .image-wrapper {
+    position: relative;
+    /* filter: blur(3px); */
+    z-index: 1;
+}
+
+.artists .image-wrapper .image-content {
+    z-index: 2;
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: 3rem;
+    padding: 3rem;
+    cursor: pointer;
+    backdrop-filter: blur(4px);
+    transition: all 0.7s ease;
+    transform: translateY(100%);
+}
+
+.artists .image-wrapper:hover .image-content {
+    transform: translateY(0%);
+    opacity: 1;
+}
+
+.artists .image-wrapper .image-content strong {
+    float: left;
+}
+
+.artists .image-wrapper .image-content p {
+    text-transform: capitalize;
+    color: black;
+}
+
+.artists .image-wrapper img {
+    object-fit: cover;
+    margin-bottom: 30px;
+}
+
+/* //schedule */
+
+.schedule {
+    padding: 5rem 0;
+    background-image: url(assets/about-bg2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.schedule .table-responsive {
+    overflow-x: auto;
+}
+
+thead th {
+    background-color: var(--primary);
+}
+
+.schedule table,
+th,
+td {
+    overflow: hidden;
+    border: .5px solid black;
+    padding: 2rem;
+}
+
+
+.schedule table,
+th h3,
+td h3 {
+    font-weight: bold;
+}
+
+.schedule-table .bg-img1 {
+    background-image: url(assets/artists-1.jpg);
+    background-position: 0px -150px;
+    background-repeat: no-repeat;
+}
+
+.schedule-table div {
+    backdrop-filter: brightness(60%);
+    border-radius: .5rem;
+}
+
+.schedule-table p {
+    font-weight: 100;
+    margin-bottom: 0;
+}
+
+.schedule-table .bg-img1 p,
+.schedule-table .bg-img2 p,
+.schedule-table .bg-img3 p {
+    font-weight: 100;
+    margin-bottom: 0;
+}
+
+.schedule-table .bg-img2 {
+    background-image: url(assets/artists-2.jpg);
+    background-repeat: no-repeat;
+}
+
+.schedule-table .bg-img3 {
+    background-image: url(assets/artists-3.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* //plans */
+
+.plans {
+    padding: 5rem 0;
+    background-color: var(--cream);
+}
+
+.plans .plans-col {
+    border: 4px dotted;
+    position: relative;
+}
+
+.plans .plans-col .pricing .discount {
+    position: absolute;
+    background-color: var(--primary);
+    right: 0;
+    top: 0;
+    margin: 20px;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    padding: 1rem;
+    text-align: center;
+}
+
+.plans .plans-col .pricing h3 small {
+    font-size: 1.2rem;
+}
+
+.plans .plans-col .price-list li {
+    color: grey;
+}
+
+.plans .plans-col button {
+    cursor: pointer;
+    font-weight: 700;
+    font-family: Helvetica, "sans-serif";
+    transition: all .2s;
+    padding: 10px 20px;
+    border-radius: 100px;
+    background: var(--primary);
+    border: 1px solid transparent;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+}
+
+.plans .plans-col button:hover {
+    background: var(--primary);
+}
+
+.plans .plans-col button>svg {
+    width: 34px;
+    margin-left: 10px;
+    transition: transform .3s ease-in-out;
+}
+
+.plans .plans-col button:hover svg {
+    transform: translateX(10px);
+}
+
+.plans .plans-col button:active {
+    transform: scale(0.95);
+}
+
+@media (max-width:450px) {
+
+    .plans .plans-col .pricing .discount {
+        width: 80px;
+        height: 80px;
+        padding: .7rem;
+        font-size: .5rem;
+    }
+}
+
+@media (max-width:800px) {
+    .plans .plans-col {
+        width: 100%;
+    }
+}
+
+@media (min-width:800px) {
+    .plans .plans-col {
+        width: 48%;
+    }
+}
+
+/* contact */
+
+.contact {
+    padding: 5rem 0;
+}
+
+.contact nav .nav-tabs {
+    background-color: var(--cream);
+    padding: 1rem;
+    border: 0;
+}
+
+.contact nav .nav-tabs .nav-link {
+    padding: 1rem;
+    color: grey;
+    /* margin-left: 15px; */
+    transition: .3s all;
+    border: 0;
+}
+
+.contact nav .nav-tabs .nav-link:hover,
+.contact nav .nav-tabs .active {
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175);
+    background-color: whitesmoke;
+    color: var(--yellow);
+}
+
+.contact .tab-content .custom-form {
+    padding: 2rem;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175);
+}
+
+.contact .tab-content form input {
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.contact .tab-content form button {
+    margin-top: 1rem;
+    background-color: var(--primary);
+    color: var(--cream);
+    font-weight: bold;
+    padding: 1rem;
+    transition: .3s;
+    text-transform: uppercase;
+    border: none;
+}
+
+.contact .tab-content form button:hover {
+    background-color: var(--yellow);
+    border: none;
+}
+
+@media (max-width:350px) {
+    .contact .tab-content form button {
+        font-size: .7rem !important;
+    }
+}
+
+@media (max-width:400px) {
+    .contact nav .nav-tabs {
+        padding: .5rem;
+        border: 0;
+    }
+    
+    .contact nav .nav-tabs .nav-link h5{
+        font-size: 1rem;
+    }
+}
+
+/* footer */
+
+footer .head {
+    background-color: var(--primary);
+}
+
+footer .head .icons {
+    font-size: 1rem;
+}
+
+footer .head .icons ul li a i {
+    margin-right: 15px;
+    border-radius: 50%;
+    padding: .6rem .7rem;
+    transition: .1s all ease-in-out;
+}
+
+footer .head .icons ul li a i:hover {
+    background-color: var(--yellow);
+    transform: scale(1.1) !important;
+}
+
+footer .nav-bottom {
+    color: var(--yellow);
+}
+
+footer .nav-bottom ul li a {
+    text-decoration: none;
+    color: var(--cream);
+    font-weight: 300;
+    transition: .2s;
+}
+
+footer .nav-bottom ul li a:hover {
+    color: var(--primary);
+}
+
+footer .nav-bottom ul li a i {
+    color: var(--yellow);
+}
